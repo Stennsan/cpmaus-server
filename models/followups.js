@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 // Create the ContactSchema
 
-var ExposuresSchema = new mongoose.Schema ({
+var FollowupsSchema = new mongoose.Schema ({
   userId: String, 
   contactId: String, 
   dateExposed: String, 
@@ -11,4 +11,4 @@ var ExposuresSchema = new mongoose.Schema ({
 });
 
 // Export thr ContactSchema
-module.exports = ExposuresSchema;
+module.exports = FollowupsSchema;
