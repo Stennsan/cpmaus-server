@@ -5,9 +5,8 @@ var mongoose = require('mongoose');
 var FollowupsSchema = new mongoose.Schema ({
   userId: String, 
   contactId: String, 
-  dateExposed: String, 
-  exposureTool: String,
-  followupDate: String
+  followupDate: String, 
+  followupTool: String
 });
 
 // Export thr ContactSchema

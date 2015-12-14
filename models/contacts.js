@@ -12,7 +12,9 @@ var ContactsSchema = new mongoose.Schema ({
   phoneNumber: String,
   companyName: String,
   exposureTool: String,
-  status: String
+  exposureDate: String,
+  followupDate: String,
+  currentGroup: String
 });
 
 // Export thr ContactSchema
