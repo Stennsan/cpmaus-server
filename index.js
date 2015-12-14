@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var _ = require('lodash');
 
+var port = process.env.PORT || 3000;
+
 // Create the application.
 var app = express();
 
@@ -33,6 +35,6 @@ mongoose.connection.once('open', function() {
     app.use(route, controller(app, route));
   });
 
-  console.log('Listening on port: ' + process.env.PORT);
-  app.listen(process.env.PORT);
+  console.log('Listening on port: ' + port);
+  app.listen(port);
 });
